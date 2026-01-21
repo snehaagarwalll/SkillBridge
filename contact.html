@@ -9,18 +9,20 @@
 <body>
 
 <nav class="navbar">
-    <h2>SkillBridge</h2>
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="courses.html">Courses</a>
-        <a href="community.html">Community</a>
-        <a href="contact.html">Contact</a>
-    </div>
+  <h2>SkillBridge</h2>
+
+  <button class="menu-toggle">☰</button>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="community.html">Community</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </nav>
 
 <section class="contact-page">
 
-    <!-- LEFT: CONTACT INFO -->
     <div class="contact-info">
         <h2>Contact Information</h2>
 
@@ -58,7 +60,6 @@
         </div>
     </div>
 
-    <!-- RIGHT: CONTACT FORM -->
     <div class="contact-form-box">
         <h2>Send us a Message</h2>
 
@@ -85,3 +86,19 @@
     </div>
 
 </section>
+
+<footer>
+    <p>© 2026 SkillBridge. All rights reserved.</p>
+</footer>
+
+<script>
+  const toggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>

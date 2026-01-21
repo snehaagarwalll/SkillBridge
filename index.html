@@ -8,15 +8,17 @@
 </head>
 <body>
 
-<!-- NAVBAR (Flexbox: space-between) -->
 <nav class="navbar">
-    <h2>SkillBridge</h2>
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="courses.html">Courses</a>
-        <a href="community.html">Community</a>
-        <a href="contact.html">Contact</a>
-    </div>
+  <h2>SkillBridge</h2>
+
+  <button class="menu-toggle">☰</button>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="community.html">Community</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </nav>
 
 <!-- HERO (Flexbox full centering) -->
@@ -73,6 +75,15 @@
 <footer>
     <p>© 2026 SkillBridge. All rights reserved.</p>
 </footer>
+
+<script>
+  const toggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
 
 </body>
 </html>
