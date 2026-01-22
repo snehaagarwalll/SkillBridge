@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge | Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>SkillBridge</h2>
+
+  <button class="menu-toggle">☰</button>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="community.html">Community</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="contact-page">
+
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+
+        <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+                <h4>Our Location</h4>
+                <p>
+                    SkillBridge Learning Hub<br>
+                    New Delhi<br>
+                    India
+                </p>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div>
+                <h4>Call Us</h4>
+                <p>
+                    +91 98765 43210<br>
+                    Mon–Fri, 9AM–6PM IST
+                </p>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div>
+                <h4>Email Us</h4>
+                <p>
+                    support@skillbridge.com<br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-form-box">
+        <h2>Send us a Message</h2>
+
+        <form class="contact-form">
+            <div class="form-row">
+                <input type="text" placeholder="First Name *" required>
+                <input type="text" placeholder="Last Name *" required>
+            </div>
+
+            <div class="form-row">
+                <input type="email" placeholder="Email Address *" required>
+                <input type="tel" placeholder="Phone Number">
+            </div>
+
+            <div class="form-row">
+                <input type="text" placeholder="Interested In">
+                <input type="text" placeholder="Subject">
+            </div>
+
+            <textarea placeholder="Tell us about your learning goals, questions, or how we can help you..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 SkillBridge. All rights reserved.</p>
+</footer>
+
+<script>
+  const toggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge | Courses</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>SkillBridge</h2>
+
+  <button class="menu-toggle">☰</button>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="community.html">Community</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="career-tracks">
+    <h1>Career Tracks</h1>
+    <p class="subtitle">Here is the Categories of Career Tracks we offer</p>
+
+    <!-- RADIO INPUTS -->
+    <input type="radio" name="tabs" id="dev" checked>
+    <input type="radio" name="tabs" id="design">
+    <input type="radio" name="tabs" id="marketing">
+    <input type="radio" name="tabs" id="admin">
+
+    <!-- TABS -->
+    <div class="track-tabs">
+        <label for="dev">Development</label>
+        <label for="design">Design</label>
+        <label for="marketing">Marketing</label>
+        <label for="admin">Administration</label>
+    </div>
+
+    <!-- TAB CONTENT -->
+    <div class="tab-content">
+
+        <!-- DEVELOPMENT -->
+        <div class="content dev">
+            <div class="track-card">
+                <img src="images/mern.png" alt="MERN">
+                <h3>MERN Developer</h3>
+                <p>Create dynamic, responsive apps using MongoDB, Express, React & Node.</p>
+            </div>
+
+            <div class="track-card">
+                <img src="images/python.png" alt="Python">
+                <h3>Python Developer</h3>
+                <p>Build scalable applications and automation solutions using Python.</p>
+            </div>
+        </div>
+
+        <!-- DESIGN -->
+        <div class="content design">
+            <div class="track-card">
+                <img src="images/uiux.png" alt="UI UX">
+                <h3>UI/UX Designer</h3>
+                <p>Design intuitive, accessible, and engaging user experiences.</p>
+            </div>
+
+            <div class="track-card">
+                <img src="images/graphic.png" alt="Graphic Design">
+                <h3>Graphic Designer</h3>
+                <p>Create visual identities and compelling brand assets.</p>
+            </div>
+        </div>
+
+        <!-- MARKETING -->
+        <div class="content marketing">
+            <div class="track-card">
+                <img src="images/marketing.png" alt="Marketing">
+                <h3>Digital Marketer</h3>
+                <p>Drive brand growth using SEO, social media, and content strategies.</p>
+            </div>
+        </div>
+
+        <!-- ADMIN -->
+        <div class="content admin">
+            <div class="track-card">
+                <img src="images/devops.png" alt="DevOps">
+                <h3>DevOps Engineer</h3>
+                <p>Manage CI/CD pipelines, cloud infrastructure, and automation.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="why-enroll">
+    <h2>Why Enroll in the SkillBridge Career Track</h2>
+
+    <div class="enroll-grid">
+
+        <div class="enroll-card green">
+            <div class="icon-box">
+                <img src="images/structured.png" alt="Structured Learning">
+            </div>
+            <div class="text-box">
+                <h3>Structured Educational Journey</h3>
+                <p>
+                    Follow a clearly defined path from basic concepts to advanced
+                    industry-level skills with guided learning.
+                </p>
+            </div>
+        </div>
+
+        <div class="enroll-card orange">
+            <div class="icon-box">
+                <img src="images/community.png" alt="Community">
+            </div>
+            <div class="text-box">
+                <h3>Supportive Community</h3>
+                <p>
+                    Join a network of learners and mentors who provide continuous
+                    guidance and peer support.
+                </p>
+            </div>
+        </div>
+
+        <div class="enroll-card orange">
+            <div class="icon-box">
+                <img src="images/experience.png" alt="Experience">
+            </div>
+            <div class="text-box">
+                <h3>Varied Learning Experiences</h3>
+                <p>
+                    Learn through hands-on projects, real-world scenarios,
+                    and interactive problem-solving.
+                </p>
+            </div>
+        </div>
+
+        <div class="enroll-card green">
+            <div class="icon-box">
+                <img src="images/career.png" alt="Career Preparation">
+            </div>
+            <div class="text-box">
+                <h3>Career Preparation</h3>
+                <p>
+                    Build job-ready skills, strong portfolios, and confidence
+                    to succeed in real-world roles.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 SkillBridge. All rights reserved.</p>
+</footer>
+
+<script>
+  const toggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>
